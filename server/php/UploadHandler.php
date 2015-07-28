@@ -184,9 +184,9 @@ class UploadHandler
             case 'POST':
                 $this->post($this->options['print_response']);
                 break;
-            case 'DELETE':
-                $this->delete($this->options['print_response']);
-                break;
+            // case 'DELETE':
+            //     $this->delete($this->options['print_response']);
+            //     break;
             default:
                 $this->header('HTTP/1.1 405 Method Not Allowed');
         }
